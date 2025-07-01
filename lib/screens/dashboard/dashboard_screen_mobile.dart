@@ -46,8 +46,8 @@ class _DashboardScreenMobileState extends State<DashboardScreenMobile> {
               borderRadius: BorderRadius.circular(16),
               child: Image.asset(
                 'assets/images/header.png',
-                fit: BoxFit.cover,
-                height: 160,
+                fit: BoxFit.contain,
+                height: 100,
                 width: double.infinity,
               ),
             ),
