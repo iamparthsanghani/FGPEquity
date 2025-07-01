@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "841608660208",
+    "project_id": "fgp-equity",
+    "storage_bucket": "fgp-equity.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841608660208:android:c627f278644232b3cf6e35",
+        "android_client_info": {
+          "package_name": "com.example.fgp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQyFS8z7nZCCmi_-nnqHH-xlauxjUDaew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
