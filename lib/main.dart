@@ -10,14 +10,24 @@ import 'blocs/games/games_bloc.dart';
 import 'repositories/game_repository.dart';
 import 'theme/app_theme.dart';
 import 'screens/auth/login_screen.dart';
+import 'screens/auth/login_screen_mobile.dart';
 import 'screens/dashboard/dashboard_screen.dart';
+import 'screens/dashboard/dashboard_screen_mobile.dart';
+import 'screens/dashboard/mobile_main_scaffold.dart';
 import 'constants/app_strings.dart';
+import 'package:flutter/services.dart';
 
 /// Main entry point of the SalesBets Flutter application.
 ///
 /// Initializes Firebase and runs the app with proper state management setup.
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Color(0xFF191D45),
+    statusBarIconBrightness: Brightness.light,
+    statusBarBrightness: Brightness.dark,
+  ));
 
   // Web-specific configuration to handle input focus issues
   if (kIsWeb) {
@@ -82,10 +92,20 @@ class AuthWrapper extends StatelessWidget {
         }
 
         if (authProvider.isAuthenticated) {
-          return const DashboardScreen();
+          final width = MediaQuery.of(context).size.width;
+          if (width < 700) {
+            return const MobileMainScaffold();
+          } else {
+            return const DashboardScreen();
+          }
         }
 
-        return const LoginScreen();
+        final width = MediaQuery.of(context).size.width;
+        if (width < 700) {
+          return const LoginScreenMobile();
+        } else {
+          return const LoginScreen();
+        }
       },
     );
   }

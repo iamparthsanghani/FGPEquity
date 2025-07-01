@@ -19,6 +19,7 @@ class AuthProvider with ChangeNotifier {
 
   void _init() {
     FirebaseService.authStateChanges.listen((User? user) {
+      print('Auth state changed: ' + (user?.uid ?? 'null'));
       _currentUser = user;
       if (user != null) {
         _loadUserProfile(user.uid);

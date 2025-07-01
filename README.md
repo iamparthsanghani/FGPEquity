@@ -4,7 +4,7 @@
 
 ![SalesBets Logo](assets/images/header.png)
 
-**An innovative platform where users can place bets on sales performance predictions**
+**A Flutter technical assessment project replicating the SalesBets platform functionality**
 
 [![Flutter](https://img.shields.io/badge/Flutter-3.19.0-blue.svg)](https://flutter.dev/)
 [![Dart](https://img.shields.io/badge/Dart-3.3.0-blue.svg)](https://dart.dev/)
@@ -15,7 +15,7 @@
 
 ## 🎯 Overview
 
-SalesBets is a modern Flutter application that revolutionizes the way sales teams engage with performance predictions. Users can place bets on sales outcomes, creating an engaging competitive environment that motivates teams and drives results through gamification.
+This is a Flutter technical assessment project that replicates the SalesBets platform functionality. The application demonstrates modern Flutter development practices, Firebase integration, and responsive UI/UX design. Built as part of the FGF Private Equity Group Flutter Developer application process.
 
 ### 🌟 Key Features
 
@@ -54,20 +54,6 @@ SalesBets is a modern Flutter application that revolutionizes the way sales team
 - ✅ **Firebase** for backend services
 - ✅ **Responsive Design** for all screen sizes
 - ✅ **Localization Ready** with centralized strings
-
-## 📱 Screenshots
-
-<div align="center">
-
-| Login Screen | Dashboard | Bet Creation |
-|--------------|-----------|--------------|
-| ![Login](assets/images/login.png) | ![Dashboard](assets/images/dashboard.png) | ![Create Bet](assets/images/create-bet.png) |
-
-| My Bets | Profile | Bet Slip |
-|---------|---------|----------|
-| ![My Bets](assets/images/my-bets.png) | ![Profile](assets/images/profile.png) | ![Bet Slip](assets/images/bet-slip.png) |
-
-</div>
 
 ## 🛠️ Technology Stack
 
@@ -148,6 +134,9 @@ flutter run
 
 # For production build
 flutter build apk --release
+
+# For web deployment
+flutter build web --release
 ```
 
 ## 📁 Project Structure
@@ -407,13 +396,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Flutter team for the amazing framework
 - Firebase team for the backend services
 - Material Design team for the design system
-- All contributors who helped improve this project
+- FGF Private Equity Group for the technical assessment opportunity
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by the SalesBets Team**
+**Built as a Flutter Technical Assessment for FGF Private Equity Group**
 
 [![GitHub stars](https://img.shields.io/github/stars/yourusername/salesbets?style=social)](https://github.com/yourusername/salesbets)
 [![GitHub forks](https://img.shields.io/github/forks/yourusername/salesbets?style=social)](https://github.com/yourusername/salesbets)
